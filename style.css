@@ -70,7 +70,17 @@ p{
     height: 344px;
     position: absolute; top: 10%; right: 10%;
     transform: rotate(15deg);
+    animation-name: wave;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
 }
+
+@keyframes wave {
+    60% {
+        transform: rotate(20deg);
+    }
+}
+
 
 .caracter2{
     background: url(img/hat-guy.png) no-repeat 0 0;
@@ -78,6 +88,15 @@ p{
     width: 292px;
     height: 387px;
     position: absolute; top: 213px; right: 30%;
+    animation-name: dance;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes dance {
+    50% {
+        transform: translateX(-20px);
+    }
 }
 
 .caracter3{
@@ -86,6 +105,15 @@ p{
     width: 200px;
     height: 264px;
     position: absolute; bottom: 20%; right: 20%;
+    animation-name: jump;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes jump {
+    50% {
+        transform: translateY(100px);
+    }
 }
 
 a.cta,
